@@ -13,17 +13,23 @@ MagicTabs is a customizable, scrollable tab component for React Native applicati
 
 ## Installation
 
-You can install MagicTabs using npm, yarn, or Expo CLI. Choose the command corresponding to your package manager or workflow:
+Install `react-native-magic-tabs` using the package manager of your choice:
+
+### npm
 
 ```bash
 npm install react-native-magic-tabs
+```
 
-or
+### yarn
 
+```bash
 yarn add react-native-magic-tabs
+```
 
-or
+### Expo CLI
 
+```bash
 npx expo add react-native-magic-tabs
 ```
 
