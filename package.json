@@ -1,6 +1,6 @@
 {
   "name": "react-native-magic-tabs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A magic horizontally scrolling tab component for React Native",
   "react-native": "src/index.tsx",
   "private": false,

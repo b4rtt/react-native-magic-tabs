@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { StyleSheet, View, Text, Image, Dimensions } from "react-native";
-import MagicTabs from "./lib/commonjs/index";
-import { MagicTabsItemsProps } from "./lib/typescript/index";
+import MagicTabs, { MagicTabsItemsProps } from "react-native-magic-tabs";
 
 export default function App() {
   const screenWidth = Dimensions.get("window").width;
