@@ -1,0 +1,65 @@
+{
+  "name": "react-native-magic-tabs",
+  "version": "1.0.0",
+  "description": "A magic horizontally scrolling tab component for React Native",
+  "react-native": "src/index.tsx",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/index.d.ts",
+  "files": [
+    "/src",
+    "/lib"
+  ],
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "yarn validate:typescript",
+    "validate:typescript": "tsc --project ./ --noEmit",
+    "prepare": "bob build"
+  },
+  "keywords": [
+    "react-native",
+    "scroll",
+    "tabs",
+    "menu",
+    "horizontal",
+    "scrollable",
+    "tab",
+    "nav"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b4rtt/react-native-magic-tabs.git"
+  },
+  "author": "Roman Simr (http://romansimr.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/b4rtt/react-native-magic-tabs/issues"
+  },
+  "homepage": "https://github.com/b4rtt/react-native-magic-tabs#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "react-native": "0.73.4",
+    "react-native-builder-bob": "^0.23.2",
+    "typescript": "^5.1.3"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      [
+        "commonjs",
+        {
+          "flow": true
+        }
+      ],
+      "module",
+      "typescript"
+    ]
+  }
+}
