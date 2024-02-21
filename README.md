@@ -2,6 +2,15 @@
 
 MagicTabs is a customizable, scrollable tab component for React Native applications. It allows for dynamic tab creation with extensive styling and alignment options.
 
+<p align="center">
+  <img src="https://github.com/b4rtt/react-native-magic-tabs/blob/main/images/ios.png?raw=true" alt="iOS Screenshot" width="45%" style="margin-right: 10px;"/>
+  <img src="https://github.com/b4rtt/react-native-magic-tabs/blob/main/images/android.png?raw=true" alt="Android Screenshot" width="45%"/>
+</p>
+
+<div align="center">
+  <small>iOS and Android screenshots of MagicTabs</small>
+</div>
+
 ## Features
 
 - Dynamic tab creation from an array of items
