@@ -34,7 +34,7 @@ npx expo add react-native-magic-tabs
 ```
 
 ## Usage
-```
+```jsx
 import React from 'react';
 import { Dimensions, View } from 'react-native';
 import MagicTabs, { MagicTabsItemsProps } from 'react-native-magic-tabs';
