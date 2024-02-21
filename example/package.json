@@ -19,5 +19,5 @@
     "@babel/core": "^7.20.0",
     "typescript": "^5.3.0"
   },
-  "private": true
+  "private": false
 }
