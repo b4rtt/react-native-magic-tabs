@@ -18,8 +18,5 @@
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "typescript": "^5.3.0"
-  },
-  "private": false,
-  "name": "react-native-magic-tabs-demo",
-  "version": "1.0.0"
+  }
 }
