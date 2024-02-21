@@ -10,13 +10,13 @@ import {
   Dimensions,
 } from "react-native";
 
-export type NavigationTabsProps = {
+export type MagicTabsItemsProps = {
   id: number;
   name: string;
 };
 
-type HorizontalScrollMenuProps = {
-  items: NavigationTabsProps[];
+type MagicTabsProps = {
+  items: MagicTabsItemsProps[];
   onPress: (index: number) => void;
   textStyle?: StyleProp<TextStyle>;
   activeTextStyle?: StyleProp<TextStyle>;
@@ -32,15 +32,15 @@ type HorizontalScrollMenuProps = {
   animated?: boolean;
   width?: number;
   height?: number;
-  Item?: React.ReactNode | ((item: NavigationTabsProps) => React.ReactNode);
+  Item?: React.ReactNode | ((item: MagicTabsItemsProps) => React.ReactNode);
   ItemActive?:
     | React.ReactNode
-    | ((item: NavigationTabsProps) => React.ReactNode);
+    | ((item: MagicTabsItemsProps) => React.ReactNode);
   customItem?: boolean;
   align?: "center" | "start" | "end";
 };
 
-const HorizontalScrollMenu: React.FC<HorizontalScrollMenuProps> = ({
+const MagicTabs: React.FC<MagicTabsProps> = ({
   items,
   onPress,
   textStyle = {},
@@ -187,4 +187,4 @@ const HorizontalScrollMenu: React.FC<HorizontalScrollMenuProps> = ({
   );
 };
 
-export default HorizontalScrollMenu;
+export default MagicTabs;

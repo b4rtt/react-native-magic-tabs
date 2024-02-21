@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { StyleSheet, View, Text, Image, Dimensions } from "react-native";
-import HorizontalScrollMenu from "./lib/commonjs/index";
-import { NavigationTabsProps } from "./lib/typescript/index";
+import MagicTabs from "./lib/commonjs/index";
+import { MagicTabsItemsProps } from "./lib/typescript/index";
 
 export default function App() {
   const screenWidth = Dimensions.get("window").width;
   const [activeIndex, setActiveIndex] = useState(6);
 
-  const NavigationTabs: NavigationTabsProps[] = [
+  const NavigationTabs: MagicTabsItemsProps[] = [
     {
       id: 1,
       name: "Bulbasaur",
@@ -89,7 +89,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <HorizontalScrollMenu
+      <MagicTabs
         items={NavigationTabs}
         onPress={onPress}
         activeIndex={activeIndex}
@@ -120,7 +120,7 @@ export default function App() {
         align="center"
       />
 
-      {/* <HorizontalScrollMenu
+      {/* <MagicTabs
         items={NavigationTabs}
         onPress={onPress}
         activeIndex={activeIndex}
@@ -130,7 +130,7 @@ export default function App() {
         width={screenWidth}
         height={62}
         customItem={true}
-        Item={(item: NavigationTabsProps) => (
+        Item={(item: MagicTabsItemsProps) => (
           <View
             style={{
               backgroundColor: "#B02132",
@@ -154,7 +154,7 @@ export default function App() {
             </Text>
           </View>
         )}
-        ItemActive={(item: NavigationTabsProps) => (
+        ItemActive={(item: MagicTabsItemsProps) => (
           <View
             style={{
               backgroundColor: "#fff",
@@ -164,11 +164,20 @@ export default function App() {
             }}
           >
             <Text
-              style={{ fontSize: 24, fontWeight: "bold", textAlign: "center" }}
+              style={{
+                fontSize: 24,
+                fontWeight: "bold",
+                textAlign: "center",
+                color: "#B02132",
+              }}
             >
               {item.id}
             </Text>
-            <Text style={{ fontSize: 12, fontWeight: "bold" }}>MAY</Text>
+            <Text
+              style={{ fontSize: 12, fontWeight: "bold", color: "#B02132" }}
+            >
+              MAY
+            </Text>
           </View>
         )}
         align="center"
