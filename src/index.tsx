@@ -28,6 +28,7 @@ type MagicTabsProps = {
   activeBackgroundColor?: string;
   activeIndex?: number;
   style?: StyleProp<ViewStyle>;
+  contentContainerStyle?: StyleProp<ViewStyle>;
   spaceBetween?: number;
   animated?: boolean;
   width?: number;
@@ -53,6 +54,7 @@ const MagicTabs: React.FC<MagicTabsProps> = ({
   activeBackgroundColor = "#fff",
   activeIndex = 0,
   style = {},
+  contentContainerStyle = {},
   spaceBetween = 0,
   animated = true,
   width = Dimensions.get("window").width,
@@ -119,7 +121,7 @@ const MagicTabs: React.FC<MagicTabsProps> = ({
         horizontal
         showsHorizontalScrollIndicator={false}
         style={{ flex: 1 }}
-        contentContainerStyle={{ flexGrow: 1 }}
+        contentContainerStyle={[{ flexGrow: 1 }, contentContainerStyle]}
         keyboardShouldPersistTaps={"always"}
       >
         {items.map((item, i) => (
