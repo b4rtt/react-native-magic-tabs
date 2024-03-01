@@ -59,7 +59,7 @@ const App = () => {
     // Add more tabs as needed
   ];
 
-  const handlePress = (index: number) => {
+  const onPress = (index: number) => {
     console.log("Selected tab:", index);
   };
 
